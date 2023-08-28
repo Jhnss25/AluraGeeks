@@ -6,9 +6,9 @@
   color: v.$primario;
   margin: 0;
 
-  @include m.tablet {
-    font-size: 4.2rem;
-  }
+    @include m.tablet { 
+        font-size: 4rem;
+    }
 
   &--color-azul {
     color: v.$secundario;

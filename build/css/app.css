@@ -392,8 +392,14 @@ img {
 .button--login {
   background-color: #2A7AE4;
   color: #FFFFFF;
-  width: 100%;
   padding: 1.6rem;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .button--login {
+    width: 100%;
+  }
 }
 .button--enlace {
   padding: 0;
@@ -432,7 +438,7 @@ img {
 }
 @media (min-width: 768px) {
   .title {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
 }
 .title--color-azul {
@@ -694,11 +700,17 @@ img {
 }
 .formulario--login {
   max-width: 50rem;
+  width: 80%;
   margin: 0 auto;
 }
 
 .productos {
   margin-bottom: 4rem;
+}
+.productos__heading {
+  margin: 3rem 0 2rem;
+  color: #464646;
+  font-size: 2.5rem;
 }
 .productos__contenido-heading {
   margin-block: 3rem;
@@ -826,6 +838,11 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .footer__logo {
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=app.css.map */
