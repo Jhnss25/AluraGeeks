@@ -32,7 +32,8 @@
         }
     }
 
-    &--login {
+    &--login,
+    &--administrador {
         background-color: v.$secundario;
         color: v.$blanco;
         padding: 1.6rem;
@@ -42,6 +43,17 @@
         @include m.tablet { 
             width: 100%;
         }
+
+        &:hover {
+            background-color: darken(v.$secundario, 10%);
+            color: v.$blanco;
+        }
+    }
+    &--administrador {
+        background-color: transparent;
+        color: v.$secundario;
+        border: solid 1px v.$secundario;
+        width: auto;
     }
 
     &--enlace {
@@ -63,3 +75,4 @@
         }
     }
 }
+

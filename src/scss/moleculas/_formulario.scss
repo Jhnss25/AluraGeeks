@@ -4,6 +4,10 @@
 .formulario {
     margin-top: 4rem;
 
+    @include m.tablet { 
+        margin: 0;
+    }
+
     &__label {
         display: block;
         font-size: 1.8rem;

@@ -386,7 +386,7 @@ img {
   background-color: #2A7AE4;
   color: #FFFFFF;
 }
-.button--login {
+.button--login, .button--administrador {
   background-color: #2A7AE4;
   color: #FFFFFF;
   padding: 1.6rem;
@@ -394,9 +394,19 @@ img {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .button--login {
+  .button--login, .button--administrador {
     width: 100%;
   }
+}
+.button--login:hover, .button--administrador:hover {
+  background-color: #1962c2;
+  color: #FFFFFF;
+}
+.button--administrador {
+  background-color: transparent;
+  color: #2A7AE4;
+  border: solid 1px #2A7AE4;
+  width: auto;
 }
 .button--enlace {
   padding: 0;
@@ -629,6 +639,11 @@ img {
 
 .formulario {
   margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .formulario {
+    margin: 0;
+  }
 }
 .formulario__label {
   display: block;
