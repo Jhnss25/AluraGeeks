@@ -479,10 +479,11 @@ img {
   }
 }
 .search__icono {
-  width: 2.5rem;
+  width: 3rem;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .search__icono {
+    width: 2.5rem;
     position: absolute;
     top: 0.8rem;
     right: 0.6rem;
@@ -559,6 +560,14 @@ img {
 @media (min-width: 768px) {
   .barra__login {
     order: 3;
+  }
+}
+.barra__search {
+  width: 3rem;
+}
+@media (min-width: 768px) {
+  .barra__search {
+    width: auto;
   }
 }
 
