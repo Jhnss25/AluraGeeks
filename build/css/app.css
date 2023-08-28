@@ -389,8 +389,12 @@ img {
 .button--login {
   background-color: #2A7AE4;
   color: #FFFFFF;
-  width: 100%;
   padding: 1.6rem;
+}
+@media (min-width: 768px) {
+  .button--login {
+    width: 100%;
+  }
 }
 .button--enlace {
   padding: 0;
@@ -665,6 +669,7 @@ img {
 }
 .formulario--login {
   max-width: 50rem;
+  width: 80%;
   margin: 0 auto;
 }
 

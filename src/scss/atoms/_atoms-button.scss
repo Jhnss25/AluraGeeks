@@ -35,8 +35,12 @@
     &--login {
         background-color: v.$secundario;
         color: v.$blanco;
-        width: 100%;
         padding: 1.6rem;
+        
+
+        @include m.tablet { 
+            width: 100%;
+        }
     }
 
     &--enlace {
