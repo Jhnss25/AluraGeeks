@@ -1,0 +1,48 @@
+@use 'styles/variables' as v;
+@use 'styles/mixins' as m;
+
+.formulario {
+    margin-top: 4rem;
+
+    &__label {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: v.$primario;
+        margin-bottom: 2rem;
+    }
+
+    &__entrada {
+        display: block;
+        padding: 1rem;
+        background-color: v.$blanco;
+        border: none;
+        width: 100%;
+        color: v.$primario;
+        outline: none;
+
+        &::placeholder,
+        &--label {
+            color: #A2A2A2;
+        }
+        &--label::first-line {
+            opacity: .4;
+        }
+
+        &--textarea {
+            margin-block: 2rem;
+        }
+
+        &--login {
+            margin-bottom: 2rem;
+            padding: 1.6rem;
+            box-shadow: 5px 5px 10px 0px rgb( 0 0 0 / .1);
+        }
+    }
+
+    &--login {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,9 @@
+@use 'styles/variables' as v;
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    color: v.$primario;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: v.$blanco;
+}

@@ -1,0 +1,25 @@
+@use 'styles/variables' as v;
+@use 'styles/mixins' as m;
+
+.title {
+    font-size: 2.5rem;
+    color: v.$primario;
+    margin: 0;
+
+    @include m.tablet { 
+        font-size: 4.2rem;
+    }
+
+    &--color-azul {
+        color: v.$secundario;
+    }
+
+    &--hero {
+        color: v.$blanco;
+        font-size: 3rem;
+
+        @include m.tablet { 
+            font-size: 5.2rem;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@use 'styles/variables' as v;
+@use 'styles/mixins' as m;
+
+.navegacion {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @include m.tablet { 
+        align-items: flex-start;
+        margin-top: 0;
+    }
+}

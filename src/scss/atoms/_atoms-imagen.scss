@@ -1,0 +1,14 @@
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+    &--logo {
+        width: 5rem;
+        height: auto;
+    }
+    &--object-fit {
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+@use 'styles/mixins' as m;
+
+.productos-contenido {
+
+}
+
+.productos {
+    margin-bottom: 4rem;
+
+    &__contenido-heading {
+        margin-block: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+        @include m.tablet { 
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

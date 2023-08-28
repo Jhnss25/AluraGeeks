@@ -1,0 +1,36 @@
+@use 'styles/variables' as v;
+@use 'styles/mixins' as m;
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 5rem; 
+
+    position: relative;
+
+    @include m.desktop { 
+        height: 60rem;
+        padding-bottom: 12rem;
+    }
+
+    .hero__contenido {
+        z-index: 100;
+    }
+
+    &::after {
+        content: '';
+        background-color: v.$primario;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .4;
+    }
+}

@@ -1,0 +1,18 @@
+.atomo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.atomo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    // flex-wrap: wrap;
+}
+
+.atomo>* {
+    margin: 1rem;
+}

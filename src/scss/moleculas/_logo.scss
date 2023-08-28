@@ -1,0 +1,11 @@
+@use 'styles/mixins' as m;
+
+[class*="logo"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include m.tablet { 
+        justify-content: flex-start;
+    }
+}

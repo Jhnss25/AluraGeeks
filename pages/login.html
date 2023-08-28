@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geeks</title>
+    <link rel="stylesheet" href="../build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="barra barra--login">
+                <div class="barra__logo">
+                    <img class="image--logo" loading="lazy" src="../src/img/logo.svg" width="500" height="300" alt="">
+                    
+                    <a href="/index.html">
+                        <h1 class="title"><span class="title--color-azul">Alura</span>Geek</h1>
+                    </a>
+                </div>
+
+                <div class="barra__search">
+                    <div class="search">
+                        <input class="search__entrada search__entrada--login" type="search" placeholder="¿Qué deseas buscar?">
+                        <img class="search__icono search__icono--login" src="../src/img/search-icon.svg" alt="icono">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="login">
+        <h3 class="login__heading">Iniciar Sesión</h3>
+        <form action="#" class="formulario formulario--login">
+                <input type="email" id="email" class="formulario__entrada formulario__entrada--login" placeholder="Ingrese su email">
+
+                <input type="password" id="password" class="formulario__entrada formulario__entrada--login" placeholder="Ingrese su contraseña">
+
+                <input type="submit" value="Enviar mensaje" class="button button--login">
+            </form>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__grid footer__contenedor">
+            <div class="footer__barra">
+                <div class="footer__logo">
+                    <img class="image image--logo" loading="lazy" src="../src/img/logo.svg" alt="">
+                    <h1 class="title"><span class="title--color-azul">Alura</span>Geek</h1>
+                </div>
+                
+                <nav class="navegacion">
+                    <a href="#" class="navegacion__enlace">Quienes somos</a>
+                    <a href="#" class="navegacion__enlace">Política de privacidad</a>
+                    <a href="#" class="navegacion__enlace">Programa de fidelidad</a>
+                    <a href="#" class="navegacion__enlace">Nuestras Tiendas</a>
+                    <a href="#" class="navegacion__enlace">Quiero ser franquiciado</a>
+                    <a href="#" class="navegacion__enlace">Anúncie aquí</a>
+                </nav>
+            </div>
+
+            <form action="#" class="formulario">
+                <label class="formulario__label">Hable con nosotros</label>
+                <div class="formulario__nombre">
+                    <label for="nombre" class="formulario__entrada formulario__entrada--label">Nombre</label>
+                    <input type="text" id="nombre" class="formulario__entrada" placeholder="">
+                </div>
+                <textarea class="formulario__entrada formulario__entrada--textarea" placeholder="Escribe tu mensaje"></textarea>
+
+                <input type="submit" value="Enviar mensaje" class="button button--primary">
+            </form>
+        </div>
+
+        <p class="copyright">Todos los derechos reservados, Alura Geeks</p>
+    </footer>
+</body>
+</html> 
