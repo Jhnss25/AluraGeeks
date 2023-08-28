@@ -2,35 +2,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
 
-
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 body {
-    font-family: v.$fuentePrincipal;
-    font-size: 1.6rem;
+  font-family: v.$fuentePrincipal;
+  font-size: 1.6rem;
 }
 p {
-    font-weight: 500;
-    font-size: 1.4rem;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
-h1, h2 {
-    font-weight: 700;
-    font-size: 2rem;
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
-[class$="contenedor"] {
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto; 
+[class*='contenedor'] {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
 }

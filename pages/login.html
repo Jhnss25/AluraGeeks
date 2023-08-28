@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Geeks</title>
-    <link rel="stylesheet" href="../build/css/app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Geeks</title>
+  <link rel="stylesheet" href="../build/css/app.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__contenedor">
-            <div class="barra barra--login">
-                <div class="barra__logo">
-                    <img class="image--logo" loading="lazy" src="../src/img/logo.svg" width="500" height="300" alt="">
-                    
-                    <a href="/index.html">
-                        <h1 class="title"><span class="title--color-azul">Alura</span>Geek</h1>
-                    </a>
-                </div>
+  <header class="header">
+    <div class="header__contenedor">
+      <div class="barra barra--login">
+        <div class="barra__logo">
+          <img class="image--logo" loading="lazy" src="../src/img/logo.svg" width="500" height="300" alt="">
 
-                <div class="barra__search">
-                    <div class="search">
-                        <input class="search__entrada search__entrada--login" type="search" placeholder="¿Qué deseas buscar?">
-                        <img class="search__icono search__icono--login" src="../src/img/search-icon.svg" alt="icono">
-                    </div>
-                </div>
-            </div>
+          <a href="/index.html">
+            <h1 class="title"><span class="title--color-azul">Alura</span>Geek</h1>
+          </a>
         </div>
-    </header>
 
-    <main class="login">
-        <h3 class="login__heading">Iniciar Sesión</h3>
-        <form action="#" class="formulario formulario--login">
-                <input type="email" id="email" class="formulario__entrada formulario__entrada--login" placeholder="Ingrese su email">
+        <div class="barra__search barra__search--login">
+          <div class="search">
+            <input class="search__entrada search__entrada--login" type="search" placeholder="¿Qué deseas buscar?">
+            <img class="search__icono search__icono--login" src="../src/img/search-icon.svg" alt="icono">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-                <input type="password" id="password" class="formulario__entrada formulario__entrada--login" placeholder="Ingrese su contraseña">
+  <main class="login">
+    <h3 class="login__heading">Iniciar Sesión</h3>
+    <form action="#" class="formulario formulario--login">
+      <input type="email" id="email" class="formulario__entrada formulario__entrada--login"
+        placeholder="Ingrese su email">
 
-                <input type="submit" value="Enviar mensaje" class="button button--login">
-            </form>
-    </main>
+      <input type="password" id="password" class="formulario__entrada formulario__entrada--login"
+        placeholder="Ingrese su contraseña">
+
+      <input type="submit" value="Enviar mensaje" class="button button--login">
+    </form>
+  </main>
     
     <footer class="footer">
         <div class="footer__grid footer__contenedor">
@@ -59,19 +63,20 @@
                 </nav>
             </div>
 
-            <form action="#" class="formulario">
-                <label class="formulario__label">Hable con nosotros</label>
-                <div class="formulario__nombre">
-                    <label for="nombre" class="formulario__entrada formulario__entrada--label">Nombre</label>
-                    <input type="text" id="nombre" class="formulario__entrada" placeholder="">
-                </div>
-                <textarea class="formulario__entrada formulario__entrada--textarea" placeholder="Escribe tu mensaje"></textarea>
-
-                <input type="submit" value="Enviar mensaje" class="button button--primary">
-            </form>
+      <form action="#" class="formulario">
+        <label class="formulario__label">Hable con nosotros</label>
+        <div class="formulario__nombre">
+          <label for="nombre" class="formulario__entrada formulario__entrada--label">Nombre</label>
+          <input type="text" id="nombre" class="formulario__entrada" placeholder="">
         </div>
+        <textarea class="formulario__entrada formulario__entrada--textarea" placeholder="Escribe tu mensaje"></textarea>
 
-        <p class="copyright">Todos los derechos reservados, Alura Geeks</p>
-    </footer>
+        <input type="submit" value="Enviar mensaje" class="button button--primary">
+      </form>
+    </div>
+
+    <p class="copyright">Todos los derechos reservados, Alura Geeks</p>
+  </footer>
 </body>
-</html> 
+
+</html>

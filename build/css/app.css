@@ -315,7 +315,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -329,7 +331,8 @@ p {
   font-size: 1.4rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 700;
   font-size: 2rem;
 }
@@ -343,7 +346,7 @@ img {
   display: block;
 }
 
-[class$=contenedor] {
+[class*=contenedor] {
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
@@ -450,6 +453,10 @@ img {
     font-size: 5.2rem;
   }
 }
+.title--producto {
+  font-size: 3rem;
+  margin: 3rem 0 2rem;
+}
 
 .search {
   position: relative;
@@ -464,8 +471,8 @@ img {
 }
 @media (min-width: 768px) {
   .search__entrada {
-    width: 21rem;
     display: block;
+    width: 21rem;
   }
 }
 @media (min-width: 1024px) {
@@ -475,7 +482,6 @@ img {
 }
 @media (min-width: 480px) {
   .search__entrada--login {
-    width: 25rem;
     display: block;
   }
 }
@@ -485,10 +491,11 @@ img {
   }
 }
 .search__icono {
-  width: 2.5rem;
+  width: 3rem;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .search__icono {
+    width: 2.5rem;
     position: absolute;
     top: 0.8rem;
     right: 0.6rem;
@@ -496,6 +503,17 @@ img {
 }
 @media (min-width: 1024px) {
   .search__icono {
+    width: 3.5rem;
+    top: 0.2rem;
+    right: 2rem;
+  }
+}
+.search__icono--login {
+  display: block;
+}
+@media (min-width: 480px) {
+  .search__icono--login {
+    position: absolute;
     width: 3.5rem;
     top: 0.2rem;
     right: 2rem;
@@ -556,7 +574,7 @@ img {
   justify-content: space-between;
   margin: 2rem 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .barra--login {
     justify-content: flex-start;
     gap: 4rem;
@@ -566,6 +584,17 @@ img {
   .barra__login {
     order: 3;
   }
+}
+.barra__search {
+  width: 3rem;
+}
+@media (min-width: 768px) {
+  .barra__search {
+    width: auto;
+  }
+}
+.barra__search--login {
+  width: auto;
 }
 
 .hero {
@@ -727,6 +756,62 @@ img {
   color: #464646;
   text-align: center;
   font-size: 2.8rem;
+}
+
+.ver-producto {
+  margin: 5rem 0;
+}
+@media (min-width: 768px) {
+  .ver-producto {
+    max-width: 120rem;
+    width: 90%;
+    margin: 5rem auto;
+  }
+}
+@media (min-width: 768px) {
+  .ver-producto__grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+  }
+}
+.ver-producto__imagen {
+  width: 100%;
+  height: 45rem;
+}
+@media (min-width: 768px) {
+  .ver-producto__imagen {
+    height: auto;
+  }
+}
+.ver-producto__contenido {
+  width: 90%;
+  margin: 0 auto;
+}
+.ver-producto__titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0 0;
+}
+@media (min-width: 1024px) {
+  .ver-producto__titulo {
+    margin: 0;
+    font-size: 4rem;
+  }
+}
+.ver-producto__precio {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .ver-producto__precio {
+    font-size: 2.5rem;
+  }
+}
+.ver-producto__descripcion {
+  margin: 0;
+  font-size: 1.6rem;
 }
 
 .header {
