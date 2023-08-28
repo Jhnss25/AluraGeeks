@@ -18,4 +18,10 @@
             align-items: flex-start;
         }
     }
+
+    &__logo {
+        @include m.tablet { 
+            margin-bottom: 2rem;
+        }
+    }
 }

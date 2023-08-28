@@ -36,7 +36,8 @@
         background-color: v.$secundario;
         color: v.$blanco;
         padding: 1.6rem;
-        
+        display: block;
+        margin: 0 auto;
 
         @include m.tablet { 
             width: 100%;

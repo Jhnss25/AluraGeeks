@@ -1,11 +1,14 @@
 @use 'styles/mixins' as m;
-
-.productos-contenido {
-
-}
+@use 'styles/variables' as v;
 
 .productos {
     margin-bottom: 4rem;
+
+    &__heading {
+        margin: 3rem 0 2rem;
+        color: v.$primario;
+        font-size: 2.5rem;
+    }
 
     &__contenido-heading {
         margin-block: 3rem;
