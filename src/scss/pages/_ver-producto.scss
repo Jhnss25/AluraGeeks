@@ -1,0 +1,57 @@
+@use 'styles/variables' as v;
+@use 'styles/mixins' as m;
+
+.ver-producto {
+  margin: 5rem 0;
+
+  @include m.tablet {
+    max-width: 120rem;
+    width: 90%;
+    margin: 5rem auto;
+  }
+
+  &__grid {
+    @include m.tablet {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      align-items: center;
+    }
+  }
+
+  &__imagen {
+    width: 100%;
+    height: 45rem;
+
+    @include m.tablet {
+      height: auto;
+    }
+  }
+
+  &__contenido {
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0 0;
+
+    @include m.desktop {
+      margin: 0;
+      font-size: 4rem;
+    }
+  }
+  &__precio {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    font-weight: 600;
+
+    @include m.desktop {
+      font-size: 2.5rem;
+    }
+  }
+  &__descripcion {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+}
